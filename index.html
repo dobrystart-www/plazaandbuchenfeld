@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAZA & BUCHENFELD Recruitment | Praca Tymczasowa Szwajcaria</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        swiss: {
+                            red: '#DC2626',
+                            hover: '#B91C1C',
+                            soft: '#FEF2F2'
+                        },
+                        navy: {
+                            DEFAULT: '#0F172A',
+                            light: '#1E293B',
+                            deep: '#020617'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .swiss-gradient {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.88) 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased selection:bg-red-100 selection:text-swiss-red">
+
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex flex-col items-start group">
+                    <span class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-navy group-hover:text-swiss-red transition-colors">
+                        PLAZA & BUCHENFELD
+                    </span>
+                    <span class="text-xs font-medium tracking-[0.25em] text-slate-500 uppercase -mt-1 pl-0.5">
+                        Recruitment
+                    </span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#o-nas" class="text-slate-600 hover:text-swiss-red transition-colors">O nas</a>
+                    <a href="#oferty" class="text-slate-600 hover:text-swiss-red transition-colors">Oferty pracy</a>
+                    <a href="#proces" class="text-slate-600 hover:text-swiss-red transition-colors">Proces rekrutacji</a>
+                    <a href="#kontakt" class="text-slate-600 hover:text-swiss-red transition-colors">Kontakt</a>
+                    <a href="#aplikuj" class="bg-swiss-red hover:bg-swiss-hover text-white px-5 py-2.5 rounded-md font-semibold transition-colors shadow-sm shadow-red-200">
+                        Aplikuj teraz
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden p-2 text-slate-600 hover:text-navy focus:outline-none">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#o-nas" class="block py-2 text-slate-600 hover:text-swiss-red font-medium">O nas</a>
+            <a href="#oferty" class="block py-2 text-slate-600 hover:text-swiss-red font-medium">Oferty pracy</a>
+            <a href="#proces" class="block py-2 text-slate-600 hover:text-swiss-red font-medium">Proces rekrutacji</a>
+            <a href="#kontakt" class="block py-2 text-slate-600 hover:text-swiss-red font-medium">Kontakt</a>
+            <a href="#aplikuj" class="block w-full text-center bg-swiss-red text-white py-2.5 rounded-md font-semibold shadow-sm">
+                Aplikuj teraz
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-navy text-white overflow-hidden py-20 lg:py-28">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&q=80&w=1920');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15 text-xs font-semibold tracking-wide uppercase text-slate-200 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-swiss-red"></span>
+                    <span>Specjaliści Rynku Szwajcarskiego</span>
+                </div>
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
+                    Pewna praca w Szwajcarii na jasnych warunkach.
+                </h1>
+                <p class="text-lg text-slate-300 mb-8 leading-relaxed font-light">
+                    Łączymy wykwalifikowanych polskich fachowców ze sprawdzonymi szwajcarskimi pracodawcami. Zapewniamy legalne zatrudnienie, atrakcyjne stawki w CHF oraz pełne wsparcie organizacyjne.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#oferty" class="inline-flex justify-center items-center bg-swiss-red hover:bg-swiss-hover text-white px-7 py-3.5 rounded-md font-semibold text-base transition-all shadow-lg shadow-red-900/30">
+                        Zobacz aktualne oferty
+                        <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                    </a>
+                    <a href="#o-nas" class="inline-flex justify-center items-center bg-white/10 hover:bg-white/20 text-white border border-white/20 px-7 py-3.5 rounded-md font-semibold text-base transition-all backdrop-blur-sm">
+                        Poznaj nas
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS / HIGHLIGHTS -->
+    <section class="bg-white border-b border-slate-200 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="font-serif text-3xl sm:text-4xl font-bold text-navy">100%</p>
+                    <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1 uppercase tracking-wider">Legalne umowy</p>
+                </div>
+                <div>
+                    <p class="font-serif text-3xl sm:text-4xl font-bold text-navy">32-45 CHF</p>
+                    <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1 uppercase tracking-wider">Średnia stawka / h</p>
+                </div>
+                <div>
+                    <p class="font-serif text-3xl sm:text-4xl font-bold text-navy">Pełne</p>
+                    <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1 uppercase tracking-wider">Wsparcie w zakwaterowaniu</p>
+                </div>
+                <div>
+                    <p class="font-serif text-3xl sm:text-4xl font-bold text-navy">0 PLN</p>
+                    <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1 uppercase tracking-wider">Opłat dla kandydata</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O NAS SECTION -->
+    <section id="o-nas" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div>
+                    <span class="text-swiss-red font-semibold text-sm uppercase tracking-wider">Dlaczego Plaza & Buchenfeld</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy mt-2 mb-6">
+                        Eksperci w rekrutacji do pracy na rynku szwajcarskim
+                    </h2>
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        Agencja **PLAZA & BUCHENFELD Recruitment** powstała z myślą o zapewnieniu bezpiecznego, transparentnego i profesjonalnego pośrednictwa pracy dla polskich specjalistów w Szwajcarii.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        Specjalizujemy się w branżach technicznych, budowlanych, przemysłowych i rzemieślniczych. Doskonale rozumiemy wyzwania związane z wyjazdem za granicę, dlatego pomagamy w dopełnieniu wszelkich formalności urzędowych, organizujemy zakwaterowanie oraz oferujemy stałą opiekę polojęzycznego koordynatora.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="p-2 bg-red-100 text-swiss-red rounded-md mr-4 mt-1">
+                                <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-navy">Sprawdzone szwajcarskie firmy</h3>
+                                <p class="text-sm text-slate-500">Współpracujemy wyłącznie ze stabilnymi pracodawcami przestrzegającymi przepisów układów zbiorowych (GAV).</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="p-2 bg-red-100 text-swiss-red rounded-md mr-4 mt-1">
+                                <i data-lucide="shield-check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-navy">Przejrzyste warunki finansowe</h3>
+                                <p class="text-sm text-slate-500">Bezpośrednia umowa szwajcarska, punktualne wypłaty z tygodniówkami lub miesięcznym wynagrodzeniem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="aspect-4/3 rounded-xl overflow-hidden shadow-xl border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=1000" alt="Fachowiec przy pracy" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg border border-slate-100 hidden sm:block max-w-xs">
+                        <p class="font-serif font-bold text-navy text-lg">„Jakość, uczciwość i bezpośredni kontakt z kandydatem.”</p>
+                        <p class="text-xs text-slate-500 mt-2">— Zespół Plaza & Buchenfeld</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTY PRACY SECTION -->
+    <section id="oferty" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-swiss-red font-semibold text-sm uppercase tracking-wider">Aktualne Rebrandy</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy mt-2 mb-4">
+                    Oferty Pracy w Szwajcarii
+                </h2>
+                <p class="text-slate-600">
+                    Poniżej znajdziesz wybrane aktualne oferty pracy tymczasowej i stałej. Kliknij „Aplikuj Teraz”, aby przejść do formularza zgłoszeniowego.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- OFERTA 1 -->
+                <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=600" alt="Elektryk" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-swiss-red text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                                36 - 40 CHF / h
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-xs font-medium text-slate-500 mb-2">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-swiss-red mr-1"></i> Zurych / Bazylea, Szwajcaria
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-navy mb-3">Elektryk Budowlany / Przemysłowy</h3>
+                            <p class="text-sm text-slate-600 mb-4 line-clamp-3">
+                                Montaż instalacji elektrycznych, okablowanie, biały montaż na obiektach komercyjnych i mieszkalnych. Wymagana znajomość j. niemieckiego (A2/B1).
+                            </p>
+                            <ul class="text-xs text-slate-500 space-y-1 mb-6">
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-swiss-red mr-2"></i> Zorganizowane zakwaterowanie</li>
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-swiss-red mr-2"></i> Szwajcarska umowa o pracę</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="selectJob('Elektryk Budowlany (Zurych)')" class="w-full text-center bg-navy hover:bg-slate-800 text-white font-medium py-2.5 rounded-md transition-colors text-sm">
+                            Aplikuj na tę ofertę
+                        </button>
+                    </div>
+                </div>
+
+                <!-- OFERTA 2 -->
+                <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=600" alt="Stolarz" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-swiss-red text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                                35 - 38 CHF / h
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-xs font-medium text-slate-500 mb-2">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-swiss-red mr-1"></i> Berno / Lucerna, Szwajcaria
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-navy mb-3">Stolarz Meblowy i Budowlany</h3>
+                            <p class="text-sm text-slate-600 mb-4 line-clamp-3">
+                                Montaż mebli, drzwi, okien oraz elementów drewnianych na budowach i u klientów indywidualnych. Wymagane doświadczenie i własne auto.
+                            </p>
+                            <ul class="text-xs text-slate-500 space-y-1 mb-6">
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-swiss-red mr-2"></i> Tygodniowe wypłaty zaliczek</li>
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-swiss-red mr-2"></i> Długofalowe zlecenie</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="selectJob('Stolarz Meblowy (Berno)')" class="w-full text-center bg-navy hover:bg-slate-800 text-white font-medium py-2.5 rounded-md transition-colors text-sm">
+                            Aplikuj na tę ofertę
+                        </button>
+                    </div>
+                </div>
+
+                <!-- OFERTA 3 -->
+                <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&q=80&w=600" alt="Hydraulik" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-swiss-red text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                                37 - 42 CHF / h
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-xs font-medium text-slate-500 mb-2">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-swiss-red mr-1"></i> St. Gallen / Winterthur, Szwajcaria
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-navy mb-3">Monteur HVAC / Hydraulik</h3>
+                            <p class="text-sm text-slate-600 mb-4 line-clamp-3">
+                                Montaż instalacji sanitarnych, grzewczych oraz klimatyzacyjnych w nowoczesnym budownictwie. Wymagane czytanie rysunku technicznego.
+                            </p>
+                            <ul class="text-xs text-slate-500 space-y-1 mb-6">
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-swiss-red mr-2"></i> Wsparcie polskiego koordynatora</li>
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-swiss-red mr-2"></i> Pomoc w dopełnieniu pozwoleń</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="selectJob('Monteur HVAC / Hydraulik (St. Gallen)')" class="w-full text-center bg-navy hover:bg-slate-800 text-white font-medium py-2.5 rounded-md transition-colors text-sm">
+                            Aplikuj na tę ofertę
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCES REKRUTACJI -->
+    <section id="proces" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-swiss-red font-semibold text-sm uppercase tracking-wider">Krok po kroku</span>
+                <h2 class="font-serif text-3xl
